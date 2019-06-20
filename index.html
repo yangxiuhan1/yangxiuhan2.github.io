@@ -22,7 +22,8 @@
             top: 0;
         }
         .reg a {
-            color: #fff;
+            color: #D75455;
+            font-weight: bold;
             font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
         }
          /* 弹框 */
@@ -48,11 +49,10 @@
             font-weight: bold;
             font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
         }
-        /* .mask-txt {
-            width: 600px;
-            height: 40px;
-            background-color: yellow;   
-        } */
+        .mask-txt {
+            font-size: 18px;
+            font-weight: lighter;
+        }
         .out-wrap {
             height: 100%;
             display: flex;
@@ -187,7 +187,7 @@
 <div id="app">
     <div class="out-wrap">
         <div class="reg">
-            <a href="#" @click="signIn">Regist</a>
+            <a href="#" @click="signIn">Regist_here</a>
         </div>
         <div id="wrap">
             <h1>ASH's Paradox</h1>
@@ -227,9 +227,9 @@
             <div class="drawer-content">
                 <span class="mask-txt animated bounceInUp">i am currently reconstructing my website, please wait and see. ^_^</span>
                 <span class="animated bounceInDown">
-                    <span class="glyphicon glyphicon-heart-empty" style="top:0;color:plum;margin-left:3px;"></span>
-                    <span class="glyphicon glyphicon-heart-empty" style="top:0;color:peru;margin-left:3px;"></span>
-                    <span class="glyphicon glyphicon-heart-empty" style="top:0;color:purple;margin-left:3px;"></span>
+                    <span class="glyphicon glyphicon-heart-empty mask-txt" style="top:4px;color:plum;margin-left:3px;"></span>
+                    <span class="glyphicon glyphicon-heart-empty mask-txt" style="top:4px;color:peru;margin-left:3px;"></span>
+                    <span class="glyphicon glyphicon-heart-empty mask-txt" style="top:4px;color:purple;margin-left:3px;"></span>
                 </span>
             </div>
         </div>
