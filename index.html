@@ -10,9 +10,30 @@
 
 <style type=text/css>
 #wrap{margin:20px auto;text-align:center}
-.checkbox{margin-left:626px;font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif}
-body{background-image:url(image/1.jpg);background-size:1365px 858px;margin:0;padding:0;}
-
+.checkbox{
+    /* margin-left:626px; */
+    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.check-inside {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: 20px;
+    line-height: 20px;
+}
+body {
+  background-image:url(image/1.jpg);
+  /* background-size:1365px 858px; */
+  background-repeat:no-repeat;
+  margin:0;padding:0;
+}
+.content {
+    /* display: flex; */
+    /* justify-content: center; */
+}
 h1{text-align:center;padding-top:30px;color:#C86B79;font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif}
 h5{ text-align:center;
 	color:#5C0048;
@@ -22,19 +43,38 @@ h5{ text-align:center;
 	
 }
 
-h7{text-align:center;font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+h7{text-align:center;
+    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
 	font-weight:bold;color:#5C0048;
-	margin:20px;auto}
-	.audiojs{width:auto;}
+	margin:20px auto;
+}
 	
+.inputForm { 
+    width: 20%;
+    text-align: center;
+    /* margin: auto; */
+}
 
-.inputForm{width:40%;text-aglin:center;margin:auto;}
-form{margin:150px;auto;;font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;color:#5BB4ED;font-size:9px;}
-#labelName{margin-left:320px;font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif}
-.label-link{margin-left:260px;}
+form{margin:150px auto;font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;color:#5BB4ED;font-size:9px;}
+#labelName {
+    /* margin-left:320px; */
+    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+    width: 120px;
+    text-align: right;
+    margin-right: 20px;
+}
+.label-link{
+    display: inline-block;
+    width: 100%;
+    text-align:center;
+}
 .intoEmail{width:30% ;height:100;margin:auto;font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif}
  
- 
+.form-group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
  
 </style>	 
 </head>
@@ -51,34 +91,29 @@ In The Morning Rain
 </div>
 
 
-<form role="form">
-  <div class="form-group">
-  <label id="labelName" for="inputEmail" font-size="200%">Username or emailaddress</label>
-  <div class="inputForm">
-     
-    	<input type="email" class="form-control " id="inputEmail" placeholder="&nbsp;">
+<form role="form" class="content">
+    <div class="form-group">
+        <label id="labelName" for="inputEmail" font-size="200%">Username or emailaddress</label>
+            <div class="inputForm">
+                <input type="email" class="form-control " id="inputEmail" placeholder="&nbsp;">
+            </div>
     </div>
-        </div>
-        <div class="form-group" >
-       <label id="labelName"for="inputEmail">Password <a href="#" class="label-link">Forgot Passworld?</a></label>
-  
+    <div class="form-group" >
+        <label id="labelName"for="inputEmail">Password</label>
         <div class="inputForm">
-        <input type="password"  class="form-control " id="inputPassword" >
-       </div>
+            <input type="password"  class="form-control " id="inputPassword" >
         </div>
-        
-        
-        <div class="checkbox">
-        <label>
-        <input type="checkbox">Save your count
+    </div>    
+    <a href="#" class="label-link">Forgot Passworld?</a>
+    <div class="checkbox">
+        <label class="check-inside">
+            <input type="checkbox">
+            <span>Save your count</span>
         </label>
-       
-     
-        </div>
-        
-       <div class="intoEmail">
+    </div>
+    <div class="intoEmail">
         <button type="button" class="btn btn-success btn-lg btn-block">Sign in</button>        </div>
-       </div>
+    </div>
         
 </form>     
 
