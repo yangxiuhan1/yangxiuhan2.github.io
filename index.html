@@ -1,127 +1,184 @@
-﻿<!doctype html>
-<html>
+﻿<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="HandheldFriendly" content="true">
-<title>ASH</title>
-<link href="css/bootstrap.min.css" rel="stylesheet" stype="text/css">	
+    <meta charset="utf-8">
+    <meta name="viewport" content="">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="HandheldFriendly" content="true">
+    <title>ASH</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" stype="text/css">
 
-<style type=text/css>
-#wrap{margin:20px auto;text-align:center}
-.checkbox{
-    /* margin-left:626px; */
-    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.check-inside {
-    display: flex;
-    align-items: center;
-    /* justify-content: center; */
-    height: 20px;
-    line-height: 20px;
-}
-body {
-  background-image:url(image/1.jpg);
-  /* background-size:1365px 858px; */
-  background-repeat:no-repeat;
-  margin:0;padding:0;
-}
-.content {
-    /* display: flex; */
-    /* justify-content: center; */
-}
-h1{text-align:center;padding-top:30px;color:#C86B79;font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif}
-h5{ text-align:center;
-	color:#5C0048;
-	margin-top: 100px;
-	font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
-	font-weight:bold;
-	
-}
-
-h7{text-align:center;
-    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
-	font-weight:bold;color:#5C0048;
-	margin:20px auto;
-}
-	
-.inputForm { 
-    width: 20%;
-    text-align: center;
-    /* margin: auto; */
-}
-
-form{margin:150px auto;font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;color:#5BB4ED;font-size:9px;}
-#labelName {
-    /* margin-left:320px; */
-    font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
-    width: 120px;
-    text-align: right;
-    margin-right: 20px;
-}
-.label-link{
-    display: inline-block;
-    width: 100%;
-    text-align:center;
-}
-.intoEmail{width:30% ;height:100;margin:auto;font-family:Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif}
- 
-.form-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
- 
-</style>	 
+    <style type=text/css>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .out-wrap {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;        
+            flex-direction: column;
+        }
+        #wrap {
+            margin: 20px auto;
+            text-align: center
+        }
+        
+        .checkbox {
+            /* margin-left:626px; */
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .check-inside {
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            height: 20px;
+            line-height: 20px;
+        }
+        
+        body {
+            background-image: url(image/1.jpg);
+            /* background-size:1365px 858px; */
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        h1 {
+            text-align: center;
+            padding-top: 30px;
+            color: #C86B79;
+            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif
+        }
+        
+        h5 {
+            text-align: center;
+            color: #5C0048;
+            margin-top: 100px;
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+            font-weight: bold;
+        }
+        
+        h7 {
+            text-align: center;
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+            font-weight: bold;
+            color: #5C0048;
+            margin: 20px auto;
+        }
+        
+        .inputForm {
+            /* width: 20%; */
+            text-align: center;
+            /* margin: auto; */
+        }
+        
+        form {
+            margin: 150px auto;
+            margin-top: 50px;
+            font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+            color: #5BB4ED;
+            font-size: 9px;
+        }
+        
+        #labelName {
+            /* margin-left:320px; */
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif;
+            /* width: 120px; */
+            /* text-align: right; */
+            margin-right: 20px;
+        }
+        
+        .label-link {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .intoEmail {
+            /* width: 30%; */
+            height: 100;
+            margin: auto;
+            font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", serif
+        }
+        
+        .form-group {
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            flex-direction: column;
+        }
+        .form-control {
+            width: 200px;
+        }
+        .psw {
+            display: flex;
+            justify-content: space-between;
+        }
+        .psw a{
+            text-align: right;
+        }
+        #mp3 {
+            position: fixed;
+            bottom:0;
+            left:0;
+        }
+    </style>
 </head>
 
 
 <body>
-<div id="wrap">
-<h1>ASH.</h1>
+    <div class="out-wrap">
+        <div id="wrap">
+            <h1>ASH.</h1>
 
-<h5>Did U Ever Feel The Pain</h5>
-<h7>
-In The Morning Rain
-</h7>
-</div>
-
-
-<form role="form" class="content">
-    <div class="form-group">
-        <label id="labelName" for="inputEmail" font-size="200%">Username or emailaddress</label>
-            <div class="inputForm">
-                <input type="email" class="form-control " id="inputEmail" placeholder="&nbsp;">
-            </div>
-    </div>
-    <div class="form-group" >
-        <label id="labelName"for="inputEmail">Password</label>
-        <div class="inputForm">
-            <input type="password"  class="form-control " id="inputPassword" >
+            <h5>Did U Ever Feel The Pain</h5>
+            <h7>
+                In The Morning Rain
+            </h7>
         </div>
-    </div>    
-    <a href="#" class="label-link">Forgot Passworld?</a>
-    <div class="checkbox">
-        <label class="check-inside">
-            <input type="checkbox">
-            <span>Save your count</span>
-        </label>
+        <form role="form" class="content">
+            <div class="form-group">
+                <label id="labelName" for="inputEmail" font-size="200%">Username or emailaddress</label>
+                <div class="inputForm">
+                    <input type="email" class="form-control" id="inputEmail" placeholder="&nbsp;">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="psw">
+                    <label id="labelName" for="inputEmail">Password</label>
+                    <a href="#" class="label-link">Forgot Passworld?</a>
+                </div>
+                <div class="inputForm">
+                    <input type="password" class="form-control " id="inputPassword">
+                </div>
+            </div>
+            <div class="checkbox">
+                <label class="check-inside">
+                    <input type="checkbox" style="margin: 0 -15px">
+                    <span>Save your count</span>
+                </label>
+            </div>
+            <div class="intoEmail">
+                <button type="button" class="btn btn-success btn-lg btn-block" style="width: 300px;">Sign in</button> </div>
+            </div>
+
+        </form>
+        <audio id="mp3" src="mp3/SundayPark.mp3" preload="auto" controls loop autoplay />
     </div>
-    <div class="intoEmail">
-        <button type="button" class="btn btn-success btn-lg btn-block">Sign in</button>        </div>
-    </div>
-        
-</form>     
-
-
-<audio id="mp3" src="mp3/SundayPark.mp3" preload="auto" controls loop autoplay />
-
-
-
-
 </body>
+
 </html>
